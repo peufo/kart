@@ -27,12 +27,14 @@ export async function getTeams() {
     range: 'teams',
   })
   const values = res.data.values?.slice(1) ?? ([] as string[][])
-  const teams: Team[] = values.map(([timestamp, name, user1, user2, time]) => ({
-    timestamp,
-    name,
-    user1,
-    user2,
-    time,
-  }))
+  const teams: Team[] = values.map(
+    ([timestamp, , name, user1, user2, time]) => ({
+      timestamp,
+      name,
+      user1,
+      user2,
+      time,
+    })
+  )
   return teams
 }

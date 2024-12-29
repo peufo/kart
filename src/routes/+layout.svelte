@@ -3,8 +3,12 @@
   let { children } = $props()
 </script>
 
-<header class="h-12 flex gap-4 shrink-0 px-4 items-center">
-  <a href="/"><h1>Fontenais savon</h1></a>
+<header
+  class="h-12 flex gap-4 shrink-0 px-4 items-center border-b-2 border-red-400"
+>
+  <a href="/">
+    <h1 class="text-lg">Fontenais savon</h1>
+  </a>
 
   <div class="grow"></div>
   <a class="block" href="/register">Inscription</a>
