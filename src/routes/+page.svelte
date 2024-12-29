@@ -1,11 +1,7 @@
 <script lang="ts">
 </script>
 
-<h1>Welcome to SvelteKit</h1>
-<p>
-  Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the
-  documentation
-</p>
-<a href="/register">Inscription</a>
-<br />
-<a href="/ranking">Classement</a>
+<div class="max-w-xl m-auto">
+  <h1 class="text-xl">Caisse a savon à Fontenais</h1>
+  <p>Inscrit toi !</p>
+</div>
