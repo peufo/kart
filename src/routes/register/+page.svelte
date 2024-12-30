@@ -2,7 +2,7 @@
   import { PUBLIC_GOOGLE_FORM_URL } from '$env/static/public'
 </script>
 
-<div class="relative h-screen" style="height: calc(100vh - 3rem);">
+<div class="relative h-screen" style="height: calc(100vh - 4rem);">
   <iframe
     title="Formulaire d'inscription"
     height="100%"
