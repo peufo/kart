@@ -1,10 +1,39 @@
 <script lang="ts">
-  import Home from '$lib/content/home.md'
+  import { Carousel, Controls } from "flowbite-svelte";
+
+  const images = [
+    {
+      title: "Sponsor A",
+      alt: "Sponsor A",
+      src: "https://placehold.co/600x400",
+    },
+    {
+      title: "Sponsor B",
+      alt: "Sponsor B",
+      src: "https://placehold.co/600x400",
+    },
+    {
+      title: "Sponsor C",
+      alt: "Sponsor C",
+      src: "https://placehold.co/600x400",
+    },
+    {
+      title: "Sponsor D",
+      alt: "Sponsor D",
+      src: "https://placehold.co/600x400",
+    },
+  ];
 </script>
 
-<div class="prose max-w-xl m-auto text-center">
-  <div class="flex justify-center">
-    <img src="/logo.webp" alt="Logo caisse a savon" class="max-h-60" />
-  </div>
-  <Home />
-</div>
+<main class="max-w-3xl m-auto px-4">
+  <section class="mt-12">
+    <div class="flex items-center gap-20 max-md:flex-col">
+      <img src="/logo.webp" alt="Logo caisse a savon" class="max-h-60" />
+      <div class="w-full">
+        <Carousel {images} duration={4000}>
+          <Controls />
+        </Carousel>
+      </div>
+    </div>
+  </section>
+</main>

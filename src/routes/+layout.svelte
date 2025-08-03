@@ -1,12 +1,13 @@
 <script lang="ts">
   import "../app.css";
   import { page } from "$app/state";
+  
   let { children } = $props();
-
+  
   const links = [
     { href: "/rules", label: "Règlement" },
     { href: "/register", label: "Inscription" },
-    { href: "/ranking", label: "Classement" },
+    { href: "/ranking", label: "Classement" }
   ];
 </script>
 

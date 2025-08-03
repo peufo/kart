@@ -1,17 +1,17 @@
 <script lang="ts">
-  import { Icon } from 'fuma'
-  import { mdiHelp, mdiTimerOutline } from '@mdi/js'
+  import { mdiHelp, mdiTimerOutline } from "@mdi/js";
+  import { MessageCircleQuestionMark, Timer } from "lucide-svelte";
 
-  const { data } = $props()
+  const { data } = $props();
 
   const topRanking = [
-    { src: '/gold.png', alt: 'Trophé or', color: '#f5c12d' },
-    { src: '/silver.png', alt: 'Trophé argent', color: '#c2c2c2' },
-    { src: '/bronze.png', alt: 'Trophé bronze', color: '#d37e65' },
-  ]
+    { src: "/gold.png", alt: "Trophé or", color: "#f5c12d" },
+    { src: "/silver.png", alt: "Trophé argent", color: "#c2c2c2" },
+    { src: "/bronze.png", alt: "Trophé bronze", color: "#d37e65" },
+  ];
 
-  const ranked = data.teams.filter((t) => t.time)
-  const unranked = data.teams.filter((t) => !t.time)
+  const ranked = data.teams.filter((t) => t.time);
+  const unranked = data.teams.filter((t) => !t.time);
 </script>
 
 <div class="m-auto my-6 max-w-md p-4 flex flex-col gap-2">
@@ -22,11 +22,11 @@
       style="border-color: {color};"
     >
       <img {src} {alt} class="h-8" />
-      <span>{team ? team.name : 'Ton équipe ?'}</span>
+      <span>{team ? team.name : "Ton équipe ?"}</span>
       <div class="grow"></div>
       {#if team}
         <div class="badge badge-lg">
-          <Icon path={mdiTimerOutline} class="-translate-x-2" />
+          <Timer />
           <span class="font-mono">{team.time}</span>
         </div>
       {/if}
@@ -41,7 +41,7 @@
       <span>{team.name}</span>
       <div class="grow"></div>
       <div class="badge badge-lg">
-        <Icon path={mdiTimerOutline} class="-translate-x-2" />
+        <Timer />
         <span class="font-mono">{team.time}</span>
       </div>
     </div>
@@ -50,7 +50,7 @@
   {#each unranked as team}
     <div class="flex gap-4 items-center px-4 py-1 rounded opacity-60">
       <div class="h-8 w-8 grid place-content-center text-xl">
-        <Icon path={mdiHelp} />
+        <MessageCircleQuestionMark />
       </div>
       <span>{team.name}</span>
     </div>
