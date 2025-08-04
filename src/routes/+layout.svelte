@@ -47,9 +47,10 @@
   }}
 />
 
-<header class="h-16 flex gap-1 shrink-0 px-4 items-center">
-  <a href="/">
-    <h1 class="text-lg">Fontenais savon</h1>
+<header class="h-16 flex gap-1 shrink-0 px-4 items-center bg-base-200">
+  <a href="/" class="flex items-center gap-4">
+    <img src="/logo.webp" alt="Logo groupe des jeunes" class="max-h-14" />
+    <h1 class="text-xl max-[560px]:hidden">La Tchaiscente</h1>
   </a>
 
   <div class="grow"></div>
@@ -68,3 +69,26 @@
 <main class="grow">
   {@render children()}
 </main>
+
+<footer class="footer sm:footer-horizontal bg-base-200 text-base-content p-10">
+  <aside>
+    <img src="/logo.webp" alt="Logo groupe des jeunes" class="max-h-40" />
+    <p>
+      La Tchaiscente 2026
+      <br />
+      Groupe des jeunes de Fontenais
+    </p>
+  </aside>
+
+  <nav>
+    <h6 class="footer-title">Contact</h6>
+    <a class="link link-hover">TODO: telephone</a>
+    <a class="link link-hover">TODO: email</a>
+  </nav>
+  <nav>
+    <h6 class="footer-title">Liens</h6>
+    <a class="link link-hover" href="/register">Inscription</a>
+    <a class="link link-hover" href="/rules">Règlement</a>
+    <a class="link link-hover" href="/ranking">Classement</a>
+  </nav>
+</footer>
