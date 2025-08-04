@@ -2,11 +2,13 @@
   import "../app.css";
   import { page } from "$app/state";
   import { MetaTags, JsonLd } from "svelte-meta-tags";
+  import { Mail, Phone } from "lucide-svelte";
 
   let { children } = $props();
 
   const links = [
     { href: "/rules", label: "Règlement" },
+    { href: "/board", label: "L'équipe" },
     { href: "/register", label: "Inscription" },
     { href: "/ranking", label: "Classement" },
   ];
@@ -82,8 +84,19 @@
 
   <nav>
     <h6 class="footer-title">Contact</h6>
-    <a class="link link-hover">TODO: telephone</a>
-    <a class="link link-hover">TODO: email</a>
+    <span>
+      <Mail class="inline-block h-4" />
+      <a
+        class="link link-hover"
+        href="mailto:groupejeunessefontenaisgjf@gmail.com"
+      >
+        groupejeunessefontenaisgjf@gmail.com
+      </a>
+    </span>
+    <span>
+      <Phone class="inline-block h-4" />
+      <a class="link link-hover" href="tel:0041798403933"> +41 79 840 39 33 </a>
+    </span>
   </nav>
   <nav>
     <h6 class="footer-title">Liens</h6>
