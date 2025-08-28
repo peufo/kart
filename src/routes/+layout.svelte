@@ -7,9 +7,8 @@
   let { children } = $props();
 
   const links = [
-    { href: "/rules", label: "Règlement" },
+    { href: "/track", label: "La course" },
     { href: "/board", label: "L'équipe" },
-    { href: "/track", label: "La déscente" },
     { href: "/register", label: "Inscription" },
     { href: "/ranking", label: "Classement" },
   ];
@@ -101,8 +100,11 @@
   </nav>
   <nav>
     <h6 class="footer-title">Liens</h6>
-    <a class="link link-hover" href="/register">Inscription</a>
-    <a class="link link-hover" href="/rules">Règlement</a>
-    <a class="link link-hover" href="/ranking">Classement</a>
+    <a class="link link-hover" href="/"> Accueil </a>
+    {#each links as { href, label }}
+      <a class="link link-hover" {href}>
+        {label}
+      </a>
+    {/each}
   </nav>
 </footer>
