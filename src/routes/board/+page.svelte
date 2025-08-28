@@ -73,10 +73,8 @@
   ];
 </script>
 
-<div class="max-w-2xl m-auto p-4 py-32 space-y-12">
-  <section>
-    <h2 class="text-4xl font-bold mb-4">L'équipe</h2>
-  </section>
+<div class="max-w-2xl m-auto p-4 pb-32 pt-20 prose">
+  <h1>L'équipe</h1>
 
   {#each members as member, index}
     <Member {...member} reverse={!(index % 2)} />

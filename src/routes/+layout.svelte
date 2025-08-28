@@ -9,6 +9,7 @@
   const links = [
     { href: "/rules", label: "Règlement" },
     { href: "/board", label: "L'équipe" },
+    { href: "/track", label: "La déscente" },
     { href: "/register", label: "Inscription" },
     { href: "/ranking", label: "Classement" },
   ];
