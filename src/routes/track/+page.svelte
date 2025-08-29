@@ -1,4 +1,5 @@
 <script lang="ts">
+  import imageTrack from "$lib/assets/track.png";
   import { MoveHorizontal, MoveVertical, TriangleRight } from "lucide-svelte";
 </script>
 
@@ -44,7 +45,7 @@
       </div>
     </div>
 
-    <img src="/track.png" alt="Plan de la piste" />
+    <img src={imageTrack} alt="Plan de la piste" />
   </section>
 
   <h2>Règlement</h2>

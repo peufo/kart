@@ -14,7 +14,6 @@
     hours = Math.floor(timeRemaining / (1000 * 60 * 60)) % 24;
     days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
     seconds %= 60;
-    console.log({ days, hours, minutes, seconds });
   }
 
   onMount(() => {
