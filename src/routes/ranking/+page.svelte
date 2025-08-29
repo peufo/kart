@@ -1,5 +1,4 @@
 <script lang="ts">
-  import { mdiHelp, mdiTimerOutline } from "@mdi/js";
   import { MessageCircleQuestionMark, Timer } from "lucide-svelte";
 
   const { data } = $props();

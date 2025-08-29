@@ -39,7 +39,6 @@
   },
   "dependencies": {
     "@googleapis/docs": "^5.0.1",
-    "@mdi/js": "^7.4.47",
     "@tailwindcss/container-queries": "^0.1.1",
     "@tailwindcss/typography": "^0.5.16",
     "googleapis": "^144.0.0",
