@@ -20,5 +20,8 @@ ssh $HOST_SSH /bin/bash << EOF
 . ~/.nvm/nvm.sh
 cd $HOST_DIR
 git pull
+rm -rf build
+pnpm install
+pnpm build
 pm2 startOrRestart pm2.config.json
 EOF
