@@ -45,7 +45,7 @@
       </div>
     </div>
 
-    <img src={imageTrack} alt="Plan de la piste" />
+    <img src={imageTrack} width="495" height="290" alt="Plan de la piste" />
   </section>
 
   <h2>Règlement</h2>

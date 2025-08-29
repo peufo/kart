@@ -85,7 +85,12 @@
 
 <div class="max-w-2xl m-auto p-4 pb-32 pt-20 prose">
   <h1>L'équipe</h1>
-  <img src={imageBoard} alt="Comité de la Tchaiscente" />
+  <img
+    src={imageBoard}
+    width="640"
+    height="480"
+    alt="Comité de la Tchaiscente"
+  />
 
   {#each members as member, index}
     <Member {...member} reverse={!(index % 2)} />

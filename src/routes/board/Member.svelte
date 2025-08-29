@@ -17,7 +17,13 @@
 </script>
 
 <section class="flex gap-6 items-center" class:flex-row-reverse={reverse}>
-  <img src={image} alt="Portrait de {name}" class="w-1/3" />
+  <img
+    src={image}
+    width="213"
+    height="284"
+    alt="Portrait de {name}"
+    class="w-1/3"
+  />
   <div>
     <h3>{name} - {title}</h3>
     <p>{description}</p>
