@@ -1,0 +1,12 @@
+{
+  "apps": [
+    {
+      "name": "kart",
+      "script": "./build/index.js",
+      "args": "-r dotenv/config",
+      "env": {
+        "PORT": 3007
+      }
+    }
+  ]
+}
