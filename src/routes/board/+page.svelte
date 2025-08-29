@@ -1,13 +1,13 @@
 <script lang="ts">
   import Member from "./Member.svelte";
-  import imageBoard from "$lib/assets/board.jpg";
-  import imageNatou from "$lib/assets/natou.jpg";
-  import imageLucien from "$lib/assets/lucien.jpg";
-  import imageRomain from "$lib/assets/romain.jpg";
-  import imageCelien from "$lib/assets/celien.jpg";
-  import imagePablo from "$lib/assets/pablo.jpg";
-  import imageMaxime from "$lib/assets/maxime.jpg";
-  import imageJohan from "$lib/assets/johan.jpg";
+  import imageBoard from "$lib/assets/board.jpg?w=640&h=480";
+  import imageNatou from "$lib/assets/natou.jpg?w=240";
+  import imageLucien from "$lib/assets/lucien.jpg?w=240";
+  import imageRomain from "$lib/assets/romain.jpg?w=240";
+  import imageCelien from "$lib/assets/celien.jpg?w=240";
+  import imagePablo from "$lib/assets/pablo.jpg?w=240";
+  import imageMaxime from "$lib/assets/maxime.jpg?w=240";
+  import imageJohan from "$lib/assets/johan.jpg?w=240";
   const imageNoa = "/logo.webp";
   const imageJimmy = "/logo.webp";
 
