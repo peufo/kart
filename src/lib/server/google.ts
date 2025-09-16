@@ -22,6 +22,8 @@ type Team = {
 };
 
 export async function getTeams() {
+  return [] as Team[]; // Disable
+
   const res = await sheets.spreadsheets.values.get({
     spreadsheetId: GOOGLE_SHEET_ID,
     range: "teams",

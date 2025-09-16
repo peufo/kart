@@ -1,8 +1,8 @@
-import { getTeams } from '$lib/server'
+import { getTeams } from "$lib/server";
 
 export const load = async () => {
-  const teams = await getTeams()
+  const teams = await getTeams();
   return {
-    teams,
-  }
-}
+    teams: teams,
+  };
+};
