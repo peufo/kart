@@ -7,7 +7,7 @@
   <h1>La course</h1>
   <section>
     <p>
-      Le départ de la course est situé dans le haut du village au cartier des
+      Le départ de la course est situé dans le haut du village au quartier des
       rochets en direction de Villars. Elle traverse une grande partie du
       village pour finir sa course à la place de la fontaine.
     </p>

@@ -19,7 +19,7 @@
   }[] = [
     {
       name: "Natou",
-      title: "Président de la cours",
+      title: "Président de la course",
       image: imageNatou,
       description:
         "Chef d’orchestre de cette joyeuse équipe, il veille à ce que tout fonctionne dans la bonne humeur et avec efficacité.",

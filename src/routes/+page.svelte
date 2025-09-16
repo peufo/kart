@@ -2,28 +2,21 @@
   import Contdown from "$lib/Contdown.svelte";
   import { Carousel, Controls } from "flowbite-svelte";
 
-  const images = [
-    {
-      title: "Sponsor A",
-      alt: "Sponsor A",
-      src: "https://placehold.co/600x400",
-    },
-    {
-      title: "Sponsor B",
-      alt: "Sponsor B",
-      src: "https://placehold.co/600x400",
-    },
-    {
-      title: "Sponsor C",
-      alt: "Sponsor C",
-      src: "https://placehold.co/600x400",
-    },
-    {
-      title: "Sponsor D",
-      alt: "Sponsor D",
-      src: "https://placehold.co/600x400",
-    },
-  ];
+  import slide0 from "$lib/assets/slide-0.png?w=700";
+  import slide1 from "$lib/assets/slide-1.png?w=700";
+  import slide2 from "$lib/assets/slide-2.png?w=700";
+  import slide3 from "$lib/assets/slide-3.png?w=700";
+  import slide4 from "$lib/assets/slide-4.png?w=700";
+  import slide5 from "$lib/assets/slide-5.png?w=700";
+  import slide6 from "$lib/assets/slide-6.png?w=700";
+
+  const images = [slide0, slide1, slide2, slide3, slide4, slide5, slide6].map(
+    (src, index) => ({
+      title: `Slide ${index}`,
+      alt: `Slide ${index}`,
+      src,
+    })
+  );
 </script>
 
 <div class="max-w-2xl m-auto p-4 pb-32 space-y-16">
