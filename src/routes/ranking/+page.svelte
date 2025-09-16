@@ -15,7 +15,7 @@
 
 <div class="m-auto my-6 max-w-md p-4 flex flex-col gap-2">
   <p class="my-8 text-center">
-    Tu pourras consulter les chronos ici dés que la course aurra eu lieu !
+    Les chronos seront disponibles ici dès la fin de la course !
   </p>
 
   {#each topRanking as { src, alt, color }, index}
