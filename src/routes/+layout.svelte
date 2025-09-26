@@ -16,7 +16,7 @@
 
 <MetaTags
   title="La Tchaiscente"
-  description="Course de caisse à savon à Fontenais le 05 septembre 2026"
+  description="Course de caisse à savon à Fontenais le 12 septembre 2026"
 />
 
 <JsonLd
@@ -25,8 +25,8 @@
     "@context": "https://schema.org",
     "@type": "Event",
     name: "La Tchaiscente",
-    startDate: "2026-09-04T19:00:00",
-    endDate: "2025-09-05T23:00:00",
+    startDate: "2026-09-12T19:00:00",
+    endDate: "2025-09-13T23:00:00",
     eventStatus: "https://schema.org/EventScheduled",
     location: {
       "@type": "Place",
@@ -40,8 +40,8 @@
         addressCountry: "CH",
       },
     },
-    image: ["https://latchaisente.ch/logo.webp"],
-    description: "Course de caisse à savon.",
+    image: ["https://latchaiscente.ch/logo.webp"],
+    description: "Course de caisse à savon à Fontenais.",
     organizer: {
       "@type": "Organization",
       name: "Le groupe des jeunes de Fontenais",

@@ -33,7 +33,7 @@
 
   <section class="prose">
     <h2>Course de caisse à savon La Tchaiscente</h2>
-    <p>Première édition le 05 septembre 2026</p>
+    <p>Première édition le 12 septembre 2026</p>
     <p>
       Soif d’adrénaline?
       <a href="/register" class="btn ml-3"> Inscris-toi dès maintenant!! </a>
