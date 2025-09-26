@@ -1,7 +1,7 @@
 <script lang="ts">
   import { onMount } from "svelte";
 
-  const eventTime = new Date(2026, 8, 5, 10, 0, 0).getTime();
+  const eventTime = new Date(2026, 8, 12, 10, 0, 0).getTime();
   let seconds = 0;
   let minutes = 0;
   let hours = 0;
