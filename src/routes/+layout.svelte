@@ -2,7 +2,7 @@
   import "../app.css";
   import { page } from "$app/state";
   import { MetaTags, JsonLd } from "svelte-meta-tags";
-  import { Mail, Phone } from "lucide-svelte";
+  import { Mail, Menu, Phone } from "lucide-svelte";
 
   let { children } = $props();
 
@@ -52,20 +52,39 @@
 <header class="h-16 flex gap-1 shrink-0 px-4 items-center bg-base-200">
   <a href="/" class="flex items-center gap-4">
     <img src="/logo.webp" alt="Logo groupe des jeunes" class="max-h-14" />
-    <h1 class="text-xl max-[560px]:hidden">La Tchaiscente</h1>
+    <h1 class="text-xl">La Tchaiscente</h1>
   </a>
 
   <div class="grow"></div>
-
-  {#each links as { href, label }}
-    <a
-      class="btn btn-sm btn-ghost"
-      class:btn-active={page.route.id === href}
-      {href}
+  <div class="hidden min-sm:flex items-center gap-1">
+    {#each links as { href, label }}
+      <a
+        class="btn btn-sm btn-ghost"
+        class:btn-active={page.route.id === href}
+        {href}
+      >
+        {label}
+      </a>
+    {/each}
+  </div>
+  <div class="hidden max-sm:dropdown dropdown-end">
+    <div tabindex="0" role="button" class="btn m-1">
+      <Menu></Menu>
+    </div>
+    <!-- svelte-ignore a11y_no_noninteractive_tabindex -->
+    <ul
+      tabindex="0"
+      class="dropdown-content menu bg-base-100 rounded-box z-1 w-42 p-2 shadow-sm"
     >
-      {label}
-    </a>
-  {/each}
+      {#each links as { href, label }}
+        <li>
+          <a class:bg-base-200={page.route.id === href} {href}>
+            {label}
+          </a>
+        </li>
+      {/each}
+    </ul>
+  </div>
 </header>
 
 <main class="grow">
