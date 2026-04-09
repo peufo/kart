@@ -1,15 +1,15 @@
 <script lang="ts">
   import Member from "./Member.svelte";
   import imageBoard from "$lib/assets/board.jpg?w=1000";
-  import imageNatou from "$lib/assets/natou.jpg?w=580";
-  import imageLucien from "$lib/assets/lucien.jpg?w=580";
-  import imageRomain from "$lib/assets/romain.jpg?w=580";
-  import imageCelien from "$lib/assets/celien.jpg?w=580";
-  import imagePablo from "$lib/assets/pablo.jpg?w=580";
-  import imageMaxime from "$lib/assets/maxime.jpg?w=580";
-  import imageJohan from "$lib/assets/johan.jpg?w=580";
-  const imageNoa = "/logo.webp";
+  import imageNatou from "$lib/assets/natou-croped.jpeg?w=580";
+  import imageLucien from "$lib/assets/lucien-croped.jpeg?w=580";
+  import imageRomain from "$lib/assets/romain-croped.jpeg?w=580";
+  import imageCelien from "$lib/assets/celien-croped.jpeg?w=580";
+  import imagePablo from "$lib/assets/pablo-croped.jpeg?w=580";
+  import imageJohan from "$lib/assets/johan-croped.jpeg?w=580";
+
   const imageJimmy = "/logo.webp";
+  const imageAlexia = "/logo.webp";
 
   const members: {
     name: string;
@@ -53,13 +53,6 @@
         "Véritable porte-parole du groupe, il place les mots et les images pour mettre en avant l’équipe sur tous les supports.",
     },
     {
-      name: "Noa",
-      title: "Financement",
-      image: imageNoa,
-      description:
-        "Trouver des financements, négocier des partenariats et dénicher les meilleures opportunités, c’est son domaine.",
-    },
-    {
       name: "Jimmy",
       title: "Chalengeur",
       image: imageJimmy,
@@ -67,18 +60,18 @@
         "Toujours prêt à repousser les limites et à relever de nouveaux défis, casse-cou de la bande, il est celui qui respire l’adrénaline de la course.",
     },
     {
-      name: "Maxime",
-      title: "Constructeur",
-      image: imageMaxime,
-      description:
-        "Ingénieux et créatif, il imagine, conçoit et construit tout ce dont l’équipe a besoin.  Les véhicules, les rampes, tout ou presque passe sous son poste à souder.",
-    },
-    {
       name: "Johan",
       title: "Mécano",
       image: imageJohan,
       description:
         "Passionné, il connaît chaque boulon et sur le bout des doigts. Réparer, optimiser, crée, il est toujours prêt à mettre les mains dans le cambouis.",
+    },
+    {
+      name: "Alexia",
+      title: "Bénévoles & Sponsoring",
+      image: imageAlexia,
+      description:
+        "Au contact des partenaires, en plus d’assurer une partie des finances, elle planifie et organise les bénévoles.",
     },
   ];
 </script>

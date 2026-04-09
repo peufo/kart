@@ -35,7 +35,7 @@
     "typescript": "^5.9.3",
     "typescript-eslint": "^8.58.1",
     "vite": "^7.3.2",
-    "vite-imagetools": "^8.0.0",
+    "vite-imagetools": "^10.0.0",
     "vite-plugin-devtools-json": "^0.2.1"
   },
   "dependencies": {
