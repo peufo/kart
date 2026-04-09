@@ -1,16 +1,30 @@
 import docs from "@googleapis/docs";
 import { google } from "googleapis";
 import path from "node:path";
-import { GOOGLE_KEY_FILENAME, GOOGLE_SHEET_ID } from "$env/static/private";
+import {
+  GOOGLE_KEY_FILENAME,
+  GOOGLE_SHEET_ID,
+  GOOGLE_FOLDER_ID,
+} from "$env/static/private";
 
-const googleAuth = new docs.auth.GoogleAuth({
+const auth = new docs.auth.GoogleAuth({
   keyFilename: path.resolve(GOOGLE_KEY_FILENAME),
-  scopes: ["https://www.googleapis.com/auth/spreadsheets"],
+  scopes: [
+    "https://www.googleapis.com/auth/spreadsheets",
+    "https://www.googleapis.com/auth/drive.readonly",
+  ],
 });
 
+// @ts-ignore
 const sheets = google.sheets({
   version: "v4",
-  auth: googleAuth,
+  auth,
+});
+
+const drive = google.drive({
+  version: "v3",
+  // @ts-ignore
+  auth,
 });
 
 type Team = {
@@ -21,15 +35,15 @@ type Team = {
   time: string;
 };
 
-export async function getTeams() {
-  return [] as Team[]; // Disable
+export async function getChronos() {
+  //return [] as Team[]; // Disable
 
   const res = await sheets.spreadsheets.values.get({
     spreadsheetId: GOOGLE_SHEET_ID,
-    range: "teams",
+    range: "chronos",
   });
   const values = res.data.values?.slice(1) ?? ([] as string[][]);
-  const teams: Team[] = values
+  const chronos: Team[] = values
     .map(([timestamp, , name, user1, user2, time = ""]) => ({
       timestamp,
       name,
@@ -40,5 +54,40 @@ export async function getTeams() {
     .toSorted((a, b) => {
       return a.time.localeCompare(b.time);
     });
-  return teams;
+
+  return chronos;
+}
+
+export type GoogleFile = {
+  name: string;
+  mimeType: string;
+  modifiedTime: string;
+  size: string;
+  webViewLink: string;
+  webContentLink?: string;
+  exportLinks?: {
+    "application/rtf": string;
+    "application/vnd.oasis.opendocument.text": string;
+    "text/html": string;
+    "application/pdf": string;
+    "text/x-markdown": string;
+    "text/markdown": string;
+    "application/epub+zip": string;
+    "application/zip": string;
+    "application/vnd.openxmlformats-officedocument.wordprocessingml.document": string;
+    "text/plain": string;
+  };
+};
+
+export async function getFiles() {
+  const res = await drive.files.list({
+    q: `'${GOOGLE_FOLDER_ID}' in parents and trashed = false`,
+    fields:
+      "files(exportLinks, name, mimeType, modifiedTime, size, webContentLink, webViewLink)",
+    //fields: "files(*)",
+  });
+
+  // @ts-ignore
+  const files = res.data.files as GoogleFile[];
+  return files || [];
 }

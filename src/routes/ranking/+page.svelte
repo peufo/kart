@@ -9,8 +9,8 @@
     { src: "/bronze.png", alt: "Trophé bronze", color: "#d37e65" },
   ];
 
-  const ranked = data.teams.filter((t) => t.time);
-  const unranked = data.teams.filter((t) => !t.time);
+  const ranked = data.chronos.filter((t) => t.time);
+  const unranked = data.chronos.filter((t) => !t.time);
 </script>
 
 <div class="m-auto my-6 max-w-md p-4 flex flex-col gap-2">

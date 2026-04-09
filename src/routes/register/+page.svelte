@@ -1,8 +1,8 @@
 <script lang="ts">
-  import { PUBLIC_GOOGLE_FORM_URL } from '$env/static/public'
+  import { PUBLIC_GOOGLE_FORM_URL } from "$env/static/public";
 </script>
 
-<div class="relative h-screen" style="height: calc(100vh - 4rem);">
+<div class="relative h-screen no-footer" style="height: calc(100vh - 4rem);">
   <iframe
     title="Formulaire d'inscription"
     height="100%"

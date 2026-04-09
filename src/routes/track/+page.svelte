@@ -1,9 +1,19 @@
 <script lang="ts">
   import imageTrack from "$lib/assets/track.png?w=500";
+  import type { GoogleFile } from "$lib/server";
   import { MoveHorizontal, MoveVertical, TriangleRight } from "lucide-svelte";
+  import File from "$lib/File.svelte";
+
+  async function getRulesFile(): Promise<GoogleFile | undefined> {
+    const res = await fetch("/files", {
+      headers: { "Content-type": "application/json" },
+    });
+    const files = (await res.json()) as GoogleFile[];
+    return files.find((f) => f.name.includes("Règlement"));
+  }
 </script>
 
-<div class="max-w-lg mx-auto p-2 pb-32 pt-20 prose">
+<div class="max-w-lg mx-auto p-2 pt-20 prose">
   <h1>La course</h1>
   <section>
     <p>
@@ -126,13 +136,12 @@
   </section>
 </div>
 
-<div class="relative h-screen" style="height: calc(100vh - 4rem);">
-  <object
-    title="Règlement"
-    data="/rules.pdf"
-    type="application/pdf"
-    width="100%"
-    height="100%"
-  >
-  </object>
+<div class="max-w-lg mx-auto mb-32">
+  {#await getRulesFile()}
+    <div class="skeleton h-26 w-full"></div>
+  {:then file}
+    {#if file}
+      <File {file} />
+    {/if}
+  {/await}
 </div>

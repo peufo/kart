@@ -1,8 +1,7 @@
-import { getTeams } from "$lib/server";
+import { getChronos } from "$lib/server";
 
 export const load = async () => {
-  const teams = await getTeams();
   return {
-    teams: teams,
+    chronos: await getChronos(),
   };
 };
