@@ -13,14 +13,23 @@
   }
 </script>
 
-<div class="max-w-lg mx-auto p-2 pt-20 prose">
-  <h1>La course</h1>
+<div class="max-w-2xl mx-auto p-2 pt-20 prose">
   <section>
-    <p>
-      Le départ de la course est situé dans le haut du village au quartier des
-      rochets en direction de Villars. Elle traverse une grande partie du
-      village pour finir sa course à la place de la fontaine.
-    </p>
+    <div class="flex gap-4 items-center">
+      <div class="">
+        <h1>La course</h1>
+        <p class="shrink">
+          Le départ de la course est situé dans le haut du village au quartier
+          des rochets en direction de Villars. Elle traverse une grande partie
+          du village pour finir sa course à la place de la fontaine.
+        </p>
+      </div>
+      <img
+        src="/logo-cup.webp"
+        alt="Logo du chat qui tiens une bière"
+        class="w-52 max-sm:w-30"
+      />
+    </div>
 
     <div class="grid grid-cols-3 gap-3 max-sm:grid-cols-1">
       <div
@@ -55,7 +64,13 @@
       </div>
     </div>
 
-    <img src={imageTrack} width="495" height="290" alt="Plan de la piste" />
+    <img
+      src={imageTrack}
+      width="495"
+      height="290"
+      alt="Plan de la piste"
+      class="mx-auto"
+    />
   </section>
 
   <h2>Règlement</h2>
@@ -77,10 +92,10 @@
   </section>
 
   <section>
-    <h3>Chalenge « GJF »</h3>
+    <h3>Challenge « GJF »</h3>
     <p>
       Si tu t’inscris sous le nom d’une association ou d’un club, tu participes
-      automatiquement au Chalenge GJF en plus du premier prix. Ce chalenge est
+      automatiquement au Challenge GJF en plus du premier prix. Ce challenge est
       dédié aux compétiteurs d’association. Mais attention, n’est pas vainqueur
       du challenge qui veut. En tant qu’association, tu devras respecter
       quelques règles supplémentaires. Tu as l’obligation de construire,

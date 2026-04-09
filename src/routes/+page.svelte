@@ -39,17 +39,25 @@
       <a href="/register" class="btn ml-3"> Inscris-toi dès maintenant!! </a>
     </p>
     <h2>Programme du week-end</h2>
-    <ul>
-      <li>Vendredi 19h ouverture du camping</li>
-      <li>Samedi 8h-10h Contrôles techniques des véhicules</li>
-      <li>Samedi 9h Descente libre</li>
-      <li>Samedi 10h Début des courses chronométré</li>
-      <li>Samedi 12h-13h Pause</li>
-      <li>Samedi 15h Descente libre</li>
-      <li>Samedi 18h Descente de parade</li>
-      <li>Samedi 19h Remise des prix</li>
-      <li>Samedi soir soirée festive et camping</li>
-    </ul>
+    <div class="flex gap-4 flex-wrap">
+      <ul class="shrink">
+        <li>Vendredi 19h ouverture du camping</li>
+        <li>Samedi 8h-10h Contrôles techniques des véhicules</li>
+        <li>Samedi 9h Descente libre</li>
+        <li>Samedi 10h Début des courses chronométré</li>
+        <li>Samedi 12h-13h Pause</li>
+        <li>Samedi 15h Descente libre</li>
+        <li>Samedi 18h Descente de parade</li>
+        <li>Samedi 19h Remise des prix</li>
+        <li>Samedi soir soirée festive et camping</li>
+      </ul>
+
+      <img
+        src="/logo-beer.webp"
+        alt="Logo du chat qui tiens une bière"
+        class="w-52 mx-auto"
+      />
+    </div>
 
     <h2>Accessibilité</h2>
     <p>
