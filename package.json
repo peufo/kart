@@ -16,7 +16,7 @@
     "@eslint/compat": "^1.4.1",
     "@sveltejs/adapter-node": "^5.5.4",
     "@sveltejs/kit": "^2.57.0",
-    "@sveltejs/vite-plugin-svelte": "^6.2.4",
+    "@sveltejs/vite-plugin-svelte": "^7.0.0",
     "@tailwindcss/typography": "^0.5.15",
     "@tailwindcss/vite": "^4.2.2",
     "@types/node": "^24.12.2",
@@ -34,9 +34,9 @@
     "tailwindcss": "^4.2.2",
     "typescript": "^5.9.3",
     "typescript-eslint": "^8.58.1",
-    "vite": "^7.3.2",
+    "vite": "^8.0.8",
     "vite-imagetools": "^10.0.0",
-    "vite-plugin-devtools-json": "^0.2.1"
+    "vite-plugin-devtools-json": "^1.0.0"
   },
   "dependencies": {
     "@googleapis/docs": "^5.0.1",
