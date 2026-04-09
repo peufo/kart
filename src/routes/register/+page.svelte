@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { PUBLIC_GOOGLE_FORM_REGISTER } from "$env/static/public";
+  import { env } from "$env/dynamic/private";
 </script>
 
 <div class="relative h-screen no-footer" style="height: calc(100vh - 4rem);">
@@ -7,7 +7,7 @@
     title="Formulaire d'inscription"
     height="100%"
     width="100%"
-    src={PUBLIC_GOOGLE_FORM_REGISTER}
+    src={env.PUBLIC_GOOGLE_FORM_REGISTER}
     frameborder="0"
     marginheight="0"
     marginwidth="0"
