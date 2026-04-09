@@ -4,7 +4,7 @@ import path from "node:path";
 import { env } from "$env/dynamic/private";
 
 const auth = new docs.auth.GoogleAuth({
-  keyFilename: path.resolve(env.GOOGLE_KEY_FILENAME),
+  keyFilename: path.resolve(env.GOOGLE_KEY_FILENAME || ""),
   scopes: [
     "https://www.googleapis.com/auth/spreadsheets",
     "https://www.googleapis.com/auth/drive.readonly",
