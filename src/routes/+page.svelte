@@ -15,7 +15,7 @@
       title: `Slide ${index}`,
       alt: `Slide ${index}`,
       src,
-    })
+    }),
   );
 </script>
 
@@ -41,13 +41,13 @@
     <h2>Programme du week-end</h2>
     <ul>
       <li>Vendredi 19h ouverture du camping</li>
-      <li>
-        Samedi 8h30 Accueil des coureurs et début des contrôles techniques des
-        véhicules
-      </li>
-      <li>Samedi 10h Début des courses</li>
-      <li>Samedi midi pause</li>
-      <li>Samedi 16h remise des prix</li>
+      <li>Samedi 8h-10h Contrôles techniques des véhicules</li>
+      <li>Samedi 9h Descente libre</li>
+      <li>Samedi 10h Début des courses chronométré</li>
+      <li>Samedi 12h-13h Pause</li>
+      <li>Samedi 15h Descente libre</li>
+      <li>Samedi 18h Descente de parade</li>
+      <li>Samedi 19h Remise des prix</li>
       <li>Samedi soir soirée festive et camping</li>
     </ul>
 
