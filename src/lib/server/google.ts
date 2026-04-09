@@ -1,14 +1,10 @@
 import docs from "@googleapis/docs";
 import { google } from "googleapis";
 import path from "node:path";
-import {
-  GOOGLE_KEY_FILENAME,
-  GOOGLE_SHEET_ID,
-  GOOGLE_FOLDER_ID,
-} from "$env/static/private";
+import { env } from "$env/dynamic/private";
 
 const auth = new docs.auth.GoogleAuth({
-  keyFilename: path.resolve(GOOGLE_KEY_FILENAME),
+  keyFilename: path.resolve(env.GOOGLE_KEY_FILENAME),
   scopes: [
     "https://www.googleapis.com/auth/spreadsheets",
     "https://www.googleapis.com/auth/drive.readonly",
@@ -39,7 +35,7 @@ export async function getChronos() {
   //return [] as Team[]; // Disable
 
   const res = await sheets.spreadsheets.values.get({
-    spreadsheetId: GOOGLE_SHEET_ID,
+    spreadsheetId: env.GOOGLE_SHEET_ID,
     range: "chronos",
   });
   const values = res.data.values?.slice(1) ?? ([] as string[][]);
@@ -81,7 +77,7 @@ export type GoogleFile = {
 
 export async function getFiles() {
   const res = await drive.files.list({
-    q: `'${GOOGLE_FOLDER_ID}' in parents and trashed = false`,
+    q: `'${env.GOOGLE_FOLDER_ID}' in parents and trashed = false`,
     fields:
       "files(exportLinks, name, mimeType, modifiedTime, size, webContentLink, webViewLink)",
     //fields: "files(*)",
