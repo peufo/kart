@@ -10,6 +10,7 @@
     { href: "/track", label: "La course" },
     { href: "/board", label: "L'équipe" },
     { href: "/register", label: "Inscription" },
+    { href: "/volunteer", label: "Bénévoles" },
     { href: "/ranking", label: "Classement" },
     { href: "/files", label: "Documents" },
   ];
@@ -60,7 +61,7 @@
     </a>
 
     <div class="grow"></div>
-    <div class="hidden sm:flex items-center gap-1">
+    <div class="hidden min-[800px]:flex items-center gap-1">
       {#each links as { href, label }}
         <a
           class="btn btn-sm btn-ghost"
@@ -71,7 +72,9 @@
         </a>
       {/each}
     </div>
-    <div class="hidden max-sm:inline-block max-sm:dropdown dropdown-end">
+    <div
+      class="hidden max-[800px]:inline-block max-[800px]:dropdown dropdown-end"
+    >
       <div tabindex="0" role="button" class="btn m-1">
         <Menu></Menu>
       </div>
@@ -96,7 +99,7 @@
   </main>
 
   <footer
-    class="footer sm:footer-horizontal bg-base-200 text-base-content p-10"
+    class="footer [800px]:footer-horizontal bg-base-200 text-base-content p-10"
   >
     <aside>
       <img src="/logo.webp" alt="Logo groupe des jeunes" class="max-h-40" />
