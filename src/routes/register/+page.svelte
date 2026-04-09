@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { env } from "$env/dynamic/private";
+  import { env } from "$env/dynamic/public";
 </script>
 
 <div class="relative h-screen no-footer" style="height: calc(100vh - 4rem);">
