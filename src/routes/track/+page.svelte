@@ -1,5 +1,6 @@
 <script lang="ts">
-  import imageTrack from "$lib/assets/track.png?w=500";
+  import imageTrack from "$lib/assets/track.jpeg?w=500";
+  import imageTrack2 from "$lib/assets/track2.jpeg?w=500";
   import type { GoogleFile } from "$lib/server";
   import { MoveHorizontal, MoveVertical, TriangleRight } from "lucide-svelte";
   import File from "$lib/File.svelte";
@@ -39,7 +40,7 @@
         <div>
           <span>Dénivelé</span>
           <br />
-          <b>35m</b>
+          <b>50m</b>
         </div>
       </div>
       <div
@@ -49,7 +50,7 @@
         <div>
           <span>Longueur</span>
           <br />
-          <b>670m</b>
+          <b>950m</b>
         </div>
       </div>
       <div
@@ -64,13 +65,8 @@
       </div>
     </div>
 
-    <img
-      src={imageTrack}
-      width="495"
-      height="290"
-      alt="Plan de la piste"
-      class="mx-auto"
-    />
+    <img src={imageTrack} alt="Plan de la piste" class="mx-auto rounded-lg" />
+    <img src={imageTrack2} alt="Plan de la piste" class="mx-auto rounded-lg" />
   </section>
 
   <h2>Règlement</h2>
