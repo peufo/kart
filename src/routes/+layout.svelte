@@ -124,7 +124,7 @@
       <span>
         <Phone class="inline-block h-4" />
         <a class="link link-hover" href="tel:0041798403933">
-          +41 79 840 39 33
+          +41 78 401 00 06
         </a>
       </span>
     </nav>
