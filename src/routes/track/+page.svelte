@@ -1,6 +1,5 @@
 <script lang="ts">
   import imageTrack from "$lib/assets/track.jpeg?w=500";
-  import imageTrack2 from "$lib/assets/track2.jpeg?w=500";
   import type { GoogleFile } from "$lib/server";
   import { MoveHorizontal, MoveVertical, TriangleRight } from "lucide-svelte";
   import File from "$lib/File.svelte";
@@ -66,7 +65,6 @@
     </div>
 
     <img src={imageTrack} alt="Plan de la piste" class="mx-auto rounded-lg" />
-    <img src={imageTrack2} alt="Plan de la piste" class="mx-auto rounded-lg" />
   </section>
 
   <h2>Règlement</h2>

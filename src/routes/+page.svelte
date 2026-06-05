@@ -2,7 +2,7 @@
   import Contdown from "$lib/Contdown.svelte";
   import { Carousel, Controls } from "flowbite-svelte";
 
-  import slide0 from "$lib/assets/slide-0.png?w=700";
+  import slide0 from "$lib/assets/slide-0.jpeg?w=700";
   import slide1 from "$lib/assets/slide-1.png?w=700";
   import slide2 from "$lib/assets/slide-2.png?w=700";
   import slide3 from "$lib/assets/slide-3.png?w=700";
