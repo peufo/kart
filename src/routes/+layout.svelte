@@ -9,7 +9,6 @@
   const links = [
     { href: "/track", label: "La course" },
     { href: "/board", label: "L'équipe" },
-    { href: "/register", label: "Inscription" },
     { href: "/volunteer", label: "Bénévoles" },
     { href: "/ranking", label: "Classement" },
     { href: "/files", label: "Documents" },
@@ -53,7 +52,7 @@
 
 <div class="flex flex-col min-h-screen">
   <header
-    class="h-16 flex gap-1 shrink-0 px-4 items-center bg-base-200 sticky top-0"
+    class="h-16 flex gap-1 shrink-0 px-4 items-center bg-base-200 sticky top-0 z-50"
   >
     <a href="/" class="flex items-center gap-4">
       <img src="/logo.webp" alt="Logo groupe des jeunes" class="max-h-14" />
