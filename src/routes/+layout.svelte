@@ -12,6 +12,7 @@
     { href: "/volunteer", label: "Bénévoles" },
     { href: "/ranking", label: "Classement" },
     { href: "/files", label: "Documents" },
+    { href: "/gallery", label: "Photos" },
   ];
 </script>
 
@@ -98,7 +99,10 @@
   </main>
 
   <footer
-    class="footer [800px]:footer-horizontal bg-base-200 text-base-content p-10"
+    class={[
+      "footer [800px]:footer-horizontal bg-base-200 text-base-content p-10",
+      "grid md:grid-cols-3",
+    ]}
   >
     <aside>
       <img src="/logo.webp" alt="Logo groupe des jeunes" class="max-h-40" />
