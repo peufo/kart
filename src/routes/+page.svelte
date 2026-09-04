@@ -42,13 +42,19 @@
     <div class="flex gap-4 flex-wrap">
       <ul class="shrink">
         <li>Vendredi 19h ouverture du camping</li>
-        <li>Samedi 8h-10h Contrôles techniques des véhicules</li>
-        <li>Samedi 9h Descente libre</li>
-        <li>Samedi 10h Début des courses chronométré</li>
+        <li>Samedi 8h-9h Contrôles techniques des véhicules</li>
+        <li>Samedi 9h-11h Tours de chauffes</li>
+        <li>Samedi 11h-12h Courses chronométrées (Dossard 1 à 42)</li>
         <li>Samedi 12h-13h Pause</li>
-        <li>Samedi 15h Descente libre</li>
-        <li>Samedi 18h Descente de parade</li>
-        <li>Samedi 19h Remise des prix</li>
+        <li>
+          Samedi 13h-14h Courses chronométrées (Dossard 21 à 1 puis 42 à 22)
+        </li>
+        <li>Samedi 14h-14h45 Rattrapage</li>
+        <li>Samedi 14h45-15h30 Final (Top 10)</li>
+        <li>Samedi 15h30-16h45 Descente libre</li>
+        <li>Samedi 16h45-17h interruption</li>
+        <li>Samedi 17h-17h30 Descente de parade</li>
+        <li>Samedi 17h30h Cérémonie officiel et remise des prix</li>
         <li>Samedi soir soirée festive et camping</li>
       </ul>
 

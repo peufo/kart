@@ -1,5 +1,5 @@
 <script lang="ts">
-  import imageTrack from "$lib/assets/track.jpeg?w=500";
+  import imageTrack from "$lib/assets/track.jpeg";
   import type { GoogleFile } from "$lib/server";
   import { MoveHorizontal, MoveVertical, TriangleRight } from "lucide-svelte";
   import File from "$lib/File.svelte";
